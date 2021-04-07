@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="author" content="harrnish">
+
+      <title>Ziad Ali</title>
+
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="style.css">
+
+      <!-- bootstrap cdns -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+
+      <!-- google fonts -->
+ 
+
+      <!-- ionicons cdn -->
+      <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+
+
+      <!-- for on scroll animations -->
+      <link rel="stylesheet" href="animate.css">
+      <script src="wow.min.js"></script>
+
+</head>
+<body>
+      <div class="wrapper">
+		    <div class="cursor"></div>
+
+            <!--------------- navbar starts here --------------->
+            <nav>
+                  <span id="brand">
+                        <h7>Ziad Ali</h7>
+                  </span>
+				
+				<span id="title" class="wow fadeInUp" data-wow-delay=".6s">Mindscape</span>
+
+                  <ul id="menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                  </ul>
+
+                  <div id="toggle">
+                        <div class="span">Menu</div>
+                  </div>
+
+            </nav>
+
+            <div id="resize">
+                  <div class="close-btn">Close</div>
+
+                  <ul id="menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                  </ul>
+            </div>
+
+            <!--------------- navbar ends here --------------->
+
+            <div class="whitespace"></div>
+
+            <!--------------- hero section starts here --------------->
+		 <section  class="wow fadeInUp" data-wow-delay="1s">
+		  <div class="scrollTitle">
+		  
+		     <div class="wow fadeInUp" data-wow-delay="1s">Coffee Rush – Coffee Rush – Coffee Rush – Coffee Rush – Coffee Rush – </div>
+			 
+			  <div class="wow fadeInUp" data-wow-delay="1s">Coffee Rush – Coffee Rush – Coffee Rush – Coffee Rush – Coffee Rush – </div>
+			 </div>
+			 </section>
+            <div class="container">
+                  <div class="hero-content">
+                        <br><br>
+                        <div class="row">
+                              <div class="col-lg-12">
+                                    <br>
+
+               
+
+                            
+                                    <br>
+                                    <p class="pD wow fadeInUp" data-wow-delay="1.8s">Start the day with morning coffee to get though the day, getting the first sip of coffee gives a kick of energy to the brain.</p>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <!--------------- hero section ends here --------------->
+
+
+            <!--------------- project image section starts here --------------->
+
+            <div class="project-img">
+                  <div class="container">
+                        <br><br>
+                        <div class="row">
+                              <div class="col-md-12">
+                                    <div class="project image wow fadeInUp" data-wow-delay="0.8s"><img class="sbi" src="images/storyboard1.jpg"></div>
+                              </div>
+                                    <div class="project image wow fadeInUp" data-wow-delay="0.8s"><div style="padding:70% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/463344996" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div></div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <!--------------- project image section ends here --------------->
+
+ 				              <div class="whitespace"></div>
+
+
+            <!--------------- project nav starts here --------------->
+
+            <div class="project-nav">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-lg-6 prev">
+								  <a href="sod.html" alt=""><p><ion-icon name="arrow-back"></ion-icon>previous</p></a>
+                              </div>
+                              <div class="col-lg-6 next">
+                                    <a class="pn"href="shss.html" alt=""> <p>next<ion-icon name="arrow-forward"></ion-icon></p></a>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <!--------------- project nav starts here --------------->
+
+            <div class="whitespace"></div>
+	            <div class="footer">
+                  <div class="container">
+                        <br><br>
+
+                   
+
+                        <br>
+
+                        <div class="hr">
+                              <div class="row"></div>
+                        </div>
+
+                        <br><br>
+
+        
+
+            <!--------------- footer ends here --------------->
+
+            <br><br><br><br>
+
+      </div>
+		  </div>
+
+
+            
+
+      
+
+      <!-- greensock cdn -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script type="text/javascript">
+
+      // navigation starts here
+      $("#toggle").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $("#resize ul li a").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $(".close-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      // navigation ends here
+
+      // nav animation
+
+      TweenMax.from("#brand", 1, {
+            delay: 0.4,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.staggerFrom("#menu li a", 1, {
+            delay: 0.4,
+            opacity: 0,
+            ease: Expo.easeInOut
+      }, 0.1);
+
+      // nav animation ends
+
+
+
+      new WOW().init();
+
+
+      </script>
+	
+	<script>
+
+(function () {
+      const link = document.querySelectorAll('.wrapper > .hover-this');
+      const cursor = document.querySelector('.cursor');
+
+      const animateit = function (e) {
+            const span = this.querySelector('span');
+            const { offsetX: x, offsetY: y } = e,
+            { offsetWidth: width, offsetHeight: height } = this,
+
+            move = 25,
+            xMove = x / width * (move * 2) - move,
+            yMove = y / height * (move * 2) - move;
+
+            span.style.transform = `translate(${xMove}px, ${yMove}px)`;
+
+            if (e.type === 'mouseleave') span.style.transform = '';
+      };
+
+      const editCursor = e => {
+            const { clientX: x, clientY: y } = e;
+            cursor.style.left = x + 'px';
+            cursor.style.top = y + 'px';
+      };
+
+      link.forEach(b => b.addEventListener('mousemove', animateit));
+      link.forEach(b => b.addEventListener('mouseleave', animateit));
+      window.addEventListener('mousemove', editCursor);
+
+})();
+
+</script>
+</body>
+</html>
